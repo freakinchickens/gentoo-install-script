@@ -2,20 +2,20 @@
 
 SCRIPT_PARAMS=$@
 
-GENTOO_MIRROR=http://ftp.iij.ad.jp/pub/linux/gentoo/
+GENTOO_MIRROR=https://gentoo.osuosl.org/
 MOUNT_LOCATION=/mnt/gentoo
-TIMEZONE=Asia/Tokyo
+TIMEZONE=America/Chicago
 
-CFLAGS="-march=core2 -O2 -pipe"
+CFLAGS="-march=native -O2 -pipe"
 
 # Options
 INSTALL_PREP=false
 INSTALL_CHROOT=false
 
 # Gentoo Options
-ROOT_DISK_PARTITION=/dev/sda
-SWAP_DISK_PARTITION=/dev/sdb
-GRUB_DISK=/dev/sda
+ROOT_DISK_PARTITION=/dev/vda3
+SWAP_DISK_PARTITION=/dev/vda2
+GRUB_DISK=/dev/vda1
 ROOT_PARTITION_FS_TYPE=ext4
 HOSTNAME=gentoo
 DOMAINNAME=localdomain
