@@ -6,7 +6,7 @@ GENTOO_MIRROR=https://gentoo.osuosl.org/
 MOUNT_LOCATION=/mnt/gentoo
 TIMEZONE=America/Chicago
 
-CFLAGS="-march=native -O2 -pipe"
+CFLAGS="-O2 -pipe -march=znver3 -mtune=znver3"
 
 # Options
 INSTALL_PREP=false
