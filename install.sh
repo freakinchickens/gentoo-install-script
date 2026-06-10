@@ -2,7 +2,7 @@
 
 SCRIPT_PARAMS=$@
 
-GENTOO_MIRROR=https://gentoo.osuosl.org/releases/amd64/autobuilds/
+GENTOO_MIRROR=https://www.gentoo.org/downloads/mirrors/
 MOUNT_LOCATION=/mnt/gentoo
 TIMEZONE=America/Chicago
 
