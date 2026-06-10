@@ -2,7 +2,7 @@
 
 SCRIPT_PARAMS=$@
 
-GENTOO_MIRROR=https://gentoo.osuosl.org/releases/amd64/autobuilds/current-stage3-amd64-desktop-systemd/stage3-amd64-desktop-systemd-20260609T160127Z.tar.xz
+GENTOO_MIRROR=https://gentoo.osuosl.org/releases/amd64/autobuilds/
 MOUNT_LOCATION=/mnt/gentoo
 TIMEZONE=America/Chicago
 
