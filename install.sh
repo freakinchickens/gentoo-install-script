@@ -102,7 +102,8 @@ install_gentoo_prep ()
     command curl -O $LATEST_STAGE3
 
     message Extracting stage 3 tarball
-    command tar xjpf stage3-*.tar.bz2
+    # command tar xjpf stage3-*.tar.bz2
+    tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner -C /mnt/gentoo
 
     #
     # Portage Snapshot
@@ -219,8 +220,10 @@ EOF
 
     message Done installing
 
-    command rm /stage3-*.tar.bz2
-    command rm /portage-latest.tar.bz2
+    # command rm /stage3-*.tar.bz2
+    command rm /stage-3-*.tar.xz
+    # command rm /portage-latest.tar.bz2
+    command rm /portage-latest.tar.xz
     command rm /bootstrap.sh
 }
 
